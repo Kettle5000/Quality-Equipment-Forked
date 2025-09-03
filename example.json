@@ -1,0 +1,64 @@
+{
+  // You can directly list specific items here (optional).
+  "items": [
+    "minecraft:diamond_sword"
+  ],
+
+  // Or apply the same qualities to all items in a tag.
+  // In this case, it applies to all helmets.
+  "item_tags": [
+    "quality_forked:helmets"
+  ],
+// Here we define all qualities that are applied to the items and item tags defined before, you MUST 
+// declare everything exactly like this, because if you dont, this wont even let you know what you did wrong.
+  "qualities": [
+    {
+      "name": "quality_equipment.quality.crumbling", // this name must match one present in the lang file for it to work
+      "weight": 8,
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.armor", // Support for modded attributes too.
+          "value": -1.5,
+          "operation": "addition",
+          "slot": "HEAD"
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": -1,
+          "operation": "addition",
+          "slot": "HEAD"
+        }
+      ]
+    },
+    {
+      "name": "quality_equipment.quality.heavy",
+      "weight": 10,
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": -0.1,
+          "operation": "multiply_base",
+          "slot": "HEAD"
+        }
+      ]
+    },
+    {
+      // This is the "default" quality.
+      // Items can roll this when no special bonuses apply.
+      "name": "quality_equipment.quality.normal",
+      "weight": 100
+    },
+    {
+      "name": "quality_equipment.quality.tough",
+      "weight": 10,
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 1,
+          "operation": "addition",
+          "slot": "HEAD"
+        }
+      ]
+    }
+  ]
+}
