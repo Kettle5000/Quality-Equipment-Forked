@@ -1,0 +1,14 @@
+{
+  "parent": "quality_forked:custom/reforging_station",
+  "textures": {
+    "all": "quality_forked:block/smooth_stone",
+    "particle": "quality_forked:block/smooth_stone",
+    "slab_top": "quality_forked:block/smooth_stone",
+    "obsidian": "quality_forked:block/obsidian",
+    "anvil_top": "quality_forked:block/anvil_top",
+    "slab_side": "quality_forked:block/smooth_stone_slab_side",
+    "wood": "quality_forked:block/oak_log",
+    "anvil_body": "quality_forked:block/anvil"
+  },
+  "render_type": "solid"
+}

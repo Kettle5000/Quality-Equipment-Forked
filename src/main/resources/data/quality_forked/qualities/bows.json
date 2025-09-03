@@ -1,0 +1,57 @@
+{
+  "items": ["minecraft:bow", "minecraft:crossbow"],
+  "qualities": [
+    {
+      "name": "quality_equipment.quality.cracked",
+      "weight": 5,
+      "attributes": [
+        {
+          "attribute": "quality_forked:projectile_damage",
+          "value": -0.15,
+          "operation": "multiply_base",
+          "slot": "MAINHAND"
+        }
+      ]
+    },
+    {
+      "name": "normal",
+      "weight": 50
+    },
+    {
+      "name": "quality_equipment.quality.clumsy",
+      "weight": 10,
+      "attributes": [
+        {
+          "attribute": "quality_forked:projectile_damage",
+          "value": -0.05,
+          "operation": "multiply_base",
+          "slot": "MAINHAND"
+        }
+      ]
+    },
+    {
+      "name": "quality_equipment.quality.powerful",
+      "weight": 5,
+      "attributes": [
+        {
+          "attribute": "quality_forked:projectile_damage",
+          "value": 0.1,
+          "operation": "multiply_base",
+          "slot": "MAINHAND"
+        }
+      ]
+    },
+    {
+      "name": "quality_equipment.quality.legendary_bow",
+      "weight": 2,
+      "attributes": [
+        {
+          "attribute": "quality_forked:projectile_damage",
+          "value": 0.15,
+          "operation": "multiply_base",
+          "slot": "MAINHAND"
+        }
+      ]
+    }
+  ]
+}
