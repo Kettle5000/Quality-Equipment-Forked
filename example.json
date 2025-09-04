@@ -1,5 +1,5 @@
 {
-  /*You can directly list specific items here (optional).
+  //You can directly list specific items here (optional).
   "items": [
     "minecraft:diamond_sword"
   ],
@@ -9,7 +9,9 @@
   "item_tags": [
     "quality_forked:helmets"
   ],
-  
+  // Last update allows you to use native minecraft classes, so this one is advanced.
+  // this will only work with vanilla classes like SwordItem, BowItem,etc, so i recommend to use this with care.
+  "class": ["SwordItem"],
 // Here we define all qualities that are applied to the items and item tags defined before, you MUST 
 // declare everything exactly like this, because if you dont, this wont even let you know what you did wrong.
   "qualities": [
@@ -44,7 +46,7 @@
       ]
     },
     {
-      // This is the "default" quality.
+      // This is the default quality.
       // Items can roll this when no special bonuses apply.
       "name": "quality_equipment.quality.normal",
       "weight": 100
@@ -63,3 +65,7 @@
     }
   ]
 }
+
+// If you are using a datapack to override the native files in this mod like tools.json , you must take into consideration that the file you create will totally override the native ones
+// so you better define very carefully what kind of qualities do you want.
+// the class section only allows any class allocated here net.minecraft.world.item., so it wont work for modded items, for that just make an item tags.
