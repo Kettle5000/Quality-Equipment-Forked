@@ -1,5 +1,5 @@
 {
-  // You can directly list specific items here (optional).
+  //*You can directly list specific items here (optional).
   "items": [
     "minecraft:diamond_sword"
   ],
@@ -9,6 +9,7 @@
   "item_tags": [
     "quality_forked:helmets"
   ],
+  
 // Here we define all qualities that are applied to the items and item tags defined before, you MUST 
 // declare everything exactly like this, because if you dont, this wont even let you know what you did wrong.
   "qualities": [
