@@ -14,15 +14,19 @@ public class Quality {
     private final int weight;
     private final Set<ResourceLocation> items;
     private final Set<TagKey<Item>> itemTags;
+    private final Set<Class<? extends Item>> itemClasses;
     private final List<AttributeModifierData> attributes;
+    private final EquipmentSlot slot;
 
-    public Quality(String name, int weight, Set<ResourceLocation> items, Set<TagKey<Item>> itemTags, List<AttributeModifierData> attributes, int id) {
+    public Quality(String name, int weight, Set<ResourceLocation> items, Set<TagKey<Item>> itemTags, Set<Class<? extends Item>> Classes, EquipmentSlot slot, List<AttributeModifierData> attributes, int id) {
         this.id = id; // assign unique ID
         this.name = name;
         this.weight = weight;
         this.items = items;
         this.itemTags = itemTags;
         this.attributes = attributes;
+        this.itemClasses = Classes;
+        this.slot = slot;
     }
 
     public int getId() { return id; }
@@ -30,7 +34,9 @@ public class Quality {
     public int getWeight() { return weight; }
     public Set<ResourceLocation> getItems() { return items; }
     public Set<TagKey<Item>> getItemTags() { return itemTags; }
+    public Set<Class<? extends Item>> getItemClasses() { return itemClasses; }
     public List<AttributeModifierData> getAttributes() { return attributes; }
+    public EquipmentSlot getSlot() { return slot; }
 
     public record AttributeModifierData(ResourceLocation attribute,
                                         AttributeModifier.Operation operation,
