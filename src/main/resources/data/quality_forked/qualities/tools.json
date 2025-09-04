@@ -1,6 +1,7 @@
 {
-  "items" : [ ],
-  "item_tags" : [ "minecraft:swords", "minecraft:axes", "minecraft:pickaxes", "minecraft:shovels", "minecraft:hoes" ],
+  "items" : [],
+  "item_tags" : [ ],
+  "class" : ["SwordItem" , "DiggerItem" ],
   "qualities" : [ {
     "name" : "quality_equipment.quality.worthless",
     "weight" : 10,
