@@ -1,7 +1,6 @@
 {
-  "item_tags": [
-    "quality_forked:helmets"
-  ],
+  "class": [ "ArmorItem" ], // You can use Item classes, but if you use ArmorItem class the next line is obligatory
+  "slot" : "HEAD",          // This line here only and only works if the class defined before is ArmorItem, if not set, by default will only work for the helmet.
   "qualities": [
     {
       "name": "quality_equipment.quality.crumbling",
@@ -11,7 +10,7 @@
           "attribute": "minecraft:generic.armor",
           "operation": "addition",
           "value": -1.5,
-          "slot": "HEAD"
+          "slot": "HEAD" // This slot is different than the one above, it only works for the specific attribute modifier you are trying to add.
         },
         {
           "attribute": "minecraft:generic.armor_toughness",
